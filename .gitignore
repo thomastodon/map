@@ -1,5 +1,8 @@
 # Xcode
 
+## Jetbrains
+.idea
+
 ## Build generated
 build/
 DerivedData/
