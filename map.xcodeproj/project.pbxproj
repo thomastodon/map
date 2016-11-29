@@ -15,6 +15,11 @@
 		E65321631DE3D59800A02301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65321611DE3D59800A02301 /* LaunchScreen.storyboard */; };
 		E653216E1DE3D59800A02301 /* mapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653216D1DE3D59800A02301 /* mapTests.swift */; };
 		E65321791DE3D59800A02301 /* mapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65321781DE3D59800A02301 /* mapUITests.swift */; };
+		E65321881DE3DD7000A02301 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65321871DE3DD7000A02301 /* LoginViewModel.swift */; };
+		E65321921DE522FA00A02301 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65321911DE522FA00A02301 /* RxSwift.framework */; };
+		E65321931DE522FA00A02301 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E65321911DE522FA00A02301 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E65321961DE524BB00A02301 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65321951DE524BB00A02301 /* RxCocoa.framework */; };
+		E65321971DE524BB00A02301 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E65321951DE524BB00A02301 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E65321901DE522CB00A02301 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E65321971DE524BB00A02301 /* RxCocoa.framework in Embed Frameworks */,
+				E65321931DE522FA00A02301 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E65321521DE3D59800A02301 /* map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65321551DE3D59800A02301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,9 @@
 		E65321741DE3D59800A02301 /* mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65321781DE3D59800A02301 /* mapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapUITests.swift; sourceTree = "<group>"; };
 		E653217A1DE3D59800A02301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65321871DE3DD7000A02301 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E65321911DE522FA00A02301 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E65321951DE524BB00A02301 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65321961DE524BB00A02301 /* RxCocoa.framework in Frameworks */,
+				E65321921DE522FA00A02301 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,7 @@
 		E65321491DE3D59800A02301 = {
 			isa = PBXGroup;
 			children = (
+				E65321941DE522FD00A02301 /* EmbeddedBinaries */,
 				E65321541DE3D59800A02301 /* map */,
 				E653216C1DE3D59800A02301 /* mapTests */,
 				E65321771DE3D59800A02301 /* mapUITests */,
@@ -103,6 +129,7 @@
 				E65321571DE3D59800A02301 /* LoginViewController.swift */,
 				E65321591DE3D59800A02301 /* Main.storyboard */,
 				E65321861DE3D7A900A02301 /* SupportingFiles */,
+				E65321871DE3DD7000A02301 /* LoginViewModel.swift */,
 			);
 			path = map;
 			sourceTree = "<group>";
@@ -136,6 +163,15 @@
 			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		E65321941DE522FD00A02301 /* EmbeddedBinaries */ = {
+			isa = PBXGroup;
+			children = (
+				E65321951DE524BB00A02301 /* RxCocoa.framework */,
+				E65321911DE522FA00A02301 /* RxSwift.framework */,
+			);
+			name = EmbeddedBinaries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +182,7 @@
 				E653214E1DE3D59800A02301 /* Sources */,
 				E653214F1DE3D59800A02301 /* Frameworks */,
 				E65321501DE3D59800A02301 /* Resources */,
+				E65321901DE522CB00A02301 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65321881DE3DD7000A02301 /* LoginViewModel.swift in Sources */,
 				E653215E1DE3D59800A02301 /* map.xcdatamodeld in Sources */,
 				E65321581DE3D59800A02301 /* LoginViewController.swift in Sources */,
 				E65321561DE3D59800A02301 /* AppDelegate.swift in Sources */,
@@ -428,6 +466,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PKTE3CR7H9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = map/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shouler.thomas.map;
@@ -441,6 +483,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PKTE3CR7H9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = map/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shouler.thomas.map;
@@ -526,6 +572,7 @@
 				E653217F1DE3D59800A02301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E65321801DE3D59800A02301 /* Build configuration list for PBXNativeTarget "mapTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +581,7 @@
 				E65321821DE3D59800A02301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E65321831DE3D59800A02301 /* Build configuration list for PBXNativeTarget "mapUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +590,7 @@
 				E65321851DE3D59800A02301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  map
-//
-//  Created by Thomas Shouler on 11/21/16.
-//  Copyright © 2016 Thomas Shouler. All rights reserved.
-//
-
 import UIKit
 import CoreData
 

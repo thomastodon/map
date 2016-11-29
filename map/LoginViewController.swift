@@ -1,30 +1,33 @@
-//
-//  LoginViewController.swift
-//  map
-//
-//  Created by Thomas Shouler on 11/21/16.
-//  Copyright © 2016 Thomas Shouler. All rights reserved.
-//
-
 import UIKit
+import RxSwift
+import RxCocoa
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let loginViewModel = LoginViewModel(
+            input: (
+                // TODO: what is orEmpty doing?
+                username: usernameTextField.rx.text.orEmpty.asDriver(),
+                password: passwordTextField.rx.text.orEmpty.asDriver(),
+                loginTaps: loginButton.rx.tap.asDriver()
+            )
+        )
+        
+        // TODO: why is it that if I remove this, things don't work?
+        loginViewModel.userIsSignedIn.drive().addDisposableTo(disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBOutlet weak var usernameTextField: UITextField!
-    
-    @IBOutlet weak var passwordTextField: UITextField!
-
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
     }
 }
 
