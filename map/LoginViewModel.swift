@@ -7,24 +7,22 @@ struct LoginViewModel {
     // TODO: appending Type to things?
     
     let disposeBag = DisposeBag()
-    
-    let userIsSignedIn: Driver<Bool>
+    let userIsSignedIn: Observable<Bool>
     
     init(
         input: (
-            username: Driver<String>,
-            password: Driver<String>,
-            loginTaps: Driver<Void>
+        username: Observable<String>,
+        password: Observable<String>,
+        loginTaps: Observable<Void>
         )
     ) {
-        let usernameAndPassword = Driver.combineLatest(input.username, input.password) { ($0, $1) }
+        let usernameAndPassword = Observable.combineLatest(input.username, input.password) { ($0, $1) }
         
         userIsSignedIn = input.loginTaps.withLatestFrom(usernameAndPassword)
-            .flatMapLatest { (username, password) -> Driver<Bool> in
+            .flatMapLatest { (username, password) -> Observable<Bool> in
                 print("username: \(username)")
                 print("password: \(password)")
-                return Driver<Bool>.empty()
-            }
+                return Observable<Bool>.empty()
+        }
     }
-    
 }
