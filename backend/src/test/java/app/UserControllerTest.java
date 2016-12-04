@@ -16,17 +16,17 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ApplicationControllerTest {
+public class UserControllerTest {
 
     private MockMvc mockMvc;
-    private ApplicationController subject;
+    private UserController subject;
     private ObjectMapper objectMapper;
 
-    @Mock private ApplicationService mockApplicationService;
+    @Mock private UserService mockUserService;
 
     @Before
     public void setUp() throws Exception {
-        subject = new ApplicationController(this.mockApplicationService);
+        subject = new UserController(this.mockUserService);
         mockMvc = MockMvcBuilders.standaloneSetup(subject).build();
         objectMapper = new ObjectMapper();
     }
@@ -43,6 +43,6 @@ public class ApplicationControllerTest {
             .content(objectMapper.writeValueAsString(user)))
             .andExpect(status().isCreated());
 
-        verify(mockApplicationService).createUser(any(User.class));
+        verify(mockUserService).createUser(any(User.class));
     }
 }

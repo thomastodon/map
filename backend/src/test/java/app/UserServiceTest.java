@@ -11,15 +11,15 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ApplicationServiceTest {
+public class UserServiceTest {
 
-    private ApplicationService subject;
+    private UserService subject;
     @Mock private BCryptPasswordEncoder mockEncoder;
     @Mock private UserRepository mockUserRepository;
 
     @Before
     public void setUp() throws Exception {
-        subject = new ApplicationService(mockUserRepository, mockEncoder);
+        subject = new UserService(mockUserRepository, mockEncoder);
     }
 
     @Test

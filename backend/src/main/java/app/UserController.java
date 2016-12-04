@@ -9,20 +9,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-class ApplicationController {
+class UserController {
 
-    private ApplicationService applicationService;
+    private UserService userService;
 
     @Autowired
-    ApplicationController(ApplicationService applicationService) {
-        this.applicationService = applicationService;
+    UserController(UserService userService) {
+        this.userService = userService;
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.POST)
     public ResponseEntity postUser(
         @RequestBody User user
     ) {
-        applicationService.createUser(user);
+        userService.createUser(user);
         return new ResponseEntity(HttpStatus.CREATED);
     }
 
