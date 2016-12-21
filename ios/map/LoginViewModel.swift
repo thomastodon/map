@@ -1,28 +1,51 @@
 import RxSwift
 import RxCocoa
+import FirebaseAuth
 
-struct LoginViewModel {
+protocol LoginViewModelType {
+    var userIsSignedIn: Variable<String> { get }
+    var username: Variable<String> { get }
+    var password: Variable<String> { get }
+}
+
+struct LoginViewModel: LoginViewModelType {
+    var userIsSignedIn: Variable<String>
     
     // TODO: no auto correct in username field?
-    // TODO: appending Type to things?
     
     let disposeBag = DisposeBag()
-    let userIsSignedIn: Observable<Bool>
     
-    init(
-        input: (
-        username: Observable<String>,
-        password: Observable<String>,
-        loginTaps: Observable<Void>
-        )
-    ) {
-        let usernameAndPassword = Observable.combineLatest(input.username, input.password) { ($0, $1) }
+    let username: Variable<String>
+    let password: Variable<String>
+    
+    // components take other componenets as args always
+    
+    init() {
+        _ = LoginClient(firebaseAuth: FIRAuth.auth()!)
         
-        userIsSignedIn = input.loginTaps.withLatestFrom(usernameAndPassword)
-            .flatMapLatest { (username, password) -> Observable<Bool> in
-                print("username: \(username)")
-                print("password: \(password)")
-                return Observable<Bool>.empty()
-        }
+        // TODO: orEmpty?
+        username = Variable("")
+        password = Variable("")
+        
+        _ = Observable.combineLatest(
+            username.asObservable(),
+            password.asObservable()
+        ) { ($0, $1) }
+        
+        userIsSignedIn = Variable("")
+        //        userIsSignedIn = loginTaps.withLatestFrom(usernameAndPassword)
+        //            .flatMapLatest { (username, password) -> Observable<Result<User>> in
+        //                return loginClient.login(username, password: password)
+        //                    .observeOn(MainScheduler.instance)
+        //            }
+        //            .flatMapLatest { result -> Observable<String> in
+        //                switch result {
+        //                case .Success( _):
+        //                    return Observable.just("signed in")
+        //                case .Failure(let error):
+        //                    return Observable.just(error.localizedDescription)
+        //                }
     }
 }
+
+

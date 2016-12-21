@@ -1,14 +1,27 @@
 import UIKit
 import CoreData
+import FirebaseAnalytics
+import Swinject
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    lazy var container: Container = { AppContainer.shared }()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FIRApp.configure()
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = container.resolve(UINavigationController.self)!
+        
+        let navigator = container.resolve(NavigatorType.self)!
+        navigator.start()
+        
         return true
     }
 

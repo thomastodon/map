@@ -7,19 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6095C941DFA4C9700EA13F5 /* MockLoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6095C931DFA4C9700EA13F5 /* MockLoginClient.swift */; };
+		E61B4C4C1DF64F5D003F7CEA /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B4C4B1DF64F5D003F7CEA /* LoginClient.swift */; };
+		E62E2A4F1E05EA4F00A51956 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E66B9FEA1E05CE0A00FDA78F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E62E2A501E05EA5600A51956 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E66B9FEC1E05CE0C00FDA78F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E62E2A521E05EA6F00A51956 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62E2A511E05EA6F00A51956 /* RxTest.framework */; };
+		E62E2A531E05EA7800A51956 /* RxTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E62E2A511E05EA6F00A51956 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E65321561DE3D59800A02301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65321551DE3D59800A02301 /* AppDelegate.swift */; };
-		E65321581DE3D59800A02301 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65321571DE3D59800A02301 /* LoginViewController.swift */; };
-		E653215B1DE3D59800A02301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65321591DE3D59800A02301 /* Main.storyboard */; };
 		E653215E1DE3D59800A02301 /* map.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E653215C1DE3D59800A02301 /* map.xcdatamodeld */; };
 		E65321601DE3D59800A02301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E653215F1DE3D59800A02301 /* Assets.xcassets */; };
-		E65321631DE3D59800A02301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65321611DE3D59800A02301 /* LaunchScreen.storyboard */; };
-		E653216E1DE3D59800A02301 /* mapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653216D1DE3D59800A02301 /* mapTests.swift */; };
-		E65321791DE3D59800A02301 /* mapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65321781DE3D59800A02301 /* mapUITests.swift */; };
 		E65321881DE3DD7000A02301 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65321871DE3DD7000A02301 /* LoginViewModel.swift */; };
-		E65321921DE522FA00A02301 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65321911DE522FA00A02301 /* RxSwift.framework */; };
-		E65321931DE522FA00A02301 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E65321911DE522FA00A02301 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E65321961DE524BB00A02301 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65321951DE524BB00A02301 /* RxCocoa.framework */; };
-		E65321971DE524BB00A02301 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E65321951DE524BB00A02301 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E66B9FEB1E05CE0A00FDA78F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66B9FEA1E05CE0A00FDA78F /* Nimble.framework */; };
+		E66B9FED1E05CE0C00FDA78F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66B9FEC1E05CE0C00FDA78F /* Quick.framework */; };
+		E684F8F41E05DBAB00F314CB /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684F8F31E05DBAB00F314CB /* FirebaseAuth.framework */; };
+		E684F8F81E05DDD000F314CB /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684F8F71E05DDD000F314CB /* FirebaseInstanceID.framework */; };
+		E684F8FC1E05DDDF00F314CB /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684F8FB1E05DDDF00F314CB /* FirebaseAnalytics.framework */; };
+		E684F9011E05E29E00F314CB /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684F8FF1E05E0B900F314CB /* FirebaseCore.framework */; };
+		E684F9031E05E2AE00F314CB /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684F9021E05E2AE00F314CB /* GoogleInterchangeUtilities.framework */; };
+		E684F9051E05E2B400F314CB /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684F9041E05E2B400F314CB /* GoogleSymbolUtilities.framework */; };
+		E684F9071E05E3AF00F314CB /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684F9061E05E3AF00F314CB /* GoogleToolboxForMac.framework */; };
+		E684F9091E05E3B400F314CB /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684F9081E05E3B400F314CB /* GTMSessionFetcher.framework */; };
+		E6B288511E0A1729007014C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B288501E0A1729007014C6 /* Main.storyboard */; };
+		E6B288531E0A1A2B007014C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B288521E0A1A2B007014C6 /* LoginViewController.swift */; };
+		E6B288551E0A1A46007014C6 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6B288541E0A1A46007014C6 /* LoginView.xib */; };
+		E6DB4F601DF4ABA50005732E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6DB4F5F1DF4ABA40005732E /* GoogleService-Info.plist */; };
+		E6E3DD2F1E05BA5B00CC3D10 /* LoginViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3DD2E1E05BA5B00CC3D10 /* LoginViewControllerSpec.swift */; };
+		E6E3DD311E05BCA600CC3D10 /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3DD301E05BCA600CC3D10 /* MockLoginViewModel.swift */; };
+		E6E5B29F1E0A044E0019C0CE /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B29E1E0A044E0019C0CE /* Navigator.swift */; };
+		E6E5B2A11E0A05220019C0CE /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B2A01E0A05220019C0CE /* AppContainer.swift */; };
+		E6E5B2A31E0A081F0019C0CE /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E5B2A21E0A081F0019C0CE /* Swinject.framework */; };
+		E6E5B2A41E0A0BAB0019C0CE /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6E5B2A21E0A081F0019C0CE /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6E5B2A81E0A13130019C0CE /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E5B2A71E0A13130019C0CE /* launch.png */; };
+		E6EDC9DC1E00EF0600D4FE6B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EDC9D91E00EF0600D4FE6B /* RxCocoa.framework */; };
+		E6EDC9DD1E00EF0600D4FE6B /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6EDC9D91E00EF0600D4FE6B /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6EDC9DE1E00EF0600D4FE6B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EDC9DA1E00EF0600D4FE6B /* RxSwift.framework */; };
+		E6EDC9DF1E00EF0600D4FE6B /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6EDC9DA1E00EF0600D4FE6B /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,24 +52,39 @@
 			remoteGlobalIDString = E65321511DE3D59800A02301;
 			remoteInfo = map;
 		};
-		E65321751DE3D59800A02301 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E653214A1DE3D59800A02301 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E65321511DE3D59800A02301;
-			remoteInfo = map;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		E62E2A3F1E05E7A500A51956 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E62E2A531E05EA7800A51956 /* RxTest.framework in CopyFiles */,
+				E62E2A501E05EA5600A51956 /* Quick.framework in CopyFiles */,
+				E62E2A4F1E05EA4F00A51956 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62E2A461E05E96900A51956 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E65321901DE522CB00A02301 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E65321971DE524BB00A02301 /* RxCocoa.framework in Embed Frameworks */,
-				E65321931DE522FA00A02301 /* RxSwift.framework in Embed Frameworks */,
+				E6E5B2A41E0A0BAB0019C0CE /* Swinject.framework in Embed Frameworks */,
+				E6EDC9DF1E00EF0600D4FE6B /* RxSwift.framework in Embed Frameworks */,
+				E6EDC9DD1E00EF0600D4FE6B /* RxCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,23 +92,42 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E6095C931DFA4C9700EA13F5 /* MockLoginClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockLoginClient.swift; path = ../map/MockLoginClient.swift; sourceTree = "<group>"; };
+		E61B4C491DF4B37D003F7CEA /* map.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = map.entitlements; sourceTree = "<group>"; };
+		E61B4C4B1DF64F5D003F7CEA /* LoginClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		E62E2A511E05EA6F00A51956 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		E62E2A541E05ED4F00A51956 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = map/firebase/Firebase.h; sourceTree = "<group>"; };
+		E62E2A551E05ED5600A51956 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = map/firebase/module.modulemap; sourceTree = "<group>"; };
 		E65321521DE3D59800A02301 /* map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65321551DE3D59800A02301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E65321571DE3D59800A02301 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E653215A1DE3D59800A02301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E653215D1DE3D59800A02301 /* map.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = map.xcdatamodel; sourceTree = "<group>"; };
 		E653215F1DE3D59800A02301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E65321621DE3D59800A02301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E65321641DE3D59800A02301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65321691DE3D59800A02301 /* mapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E653216D1DE3D59800A02301 /* mapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapTests.swift; sourceTree = "<group>"; };
 		E653216F1DE3D59800A02301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E65321741DE3D59800A02301 /* mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E65321781DE3D59800A02301 /* mapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapUITests.swift; sourceTree = "<group>"; };
-		E653217A1DE3D59800A02301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65321871DE3DD7000A02301 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		E65321911DE522FA00A02301 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		E65321951DE524BB00A02301 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E66B9FEA1E05CE0A00FDA78F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		E66B9FEC1E05CE0C00FDA78F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		E684F8F31E05DBAB00F314CB /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = map/firebase/FirebaseAuth.framework; sourceTree = "<group>"; };
+		E684F8F71E05DDD000F314CB /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = map/firebase/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		E684F8FB1E05DDDF00F314CB /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = map/firebase/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		E684F8FF1E05E0B900F314CB /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = map/firebase/FirebaseCore.framework; sourceTree = "<group>"; };
+		E684F9021E05E2AE00F314CB /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = map/firebase/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		E684F9041E05E2B400F314CB /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = map/firebase/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		E684F9061E05E3AF00F314CB /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = map/firebase/GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		E684F9081E05E3B400F314CB /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = map/firebase/GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		E6B288501E0A1729007014C6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E6B288521E0A1A2B007014C6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E6B288541E0A1A46007014C6 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		E6DB4F5F1DF4ABA40005732E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6E3DD2E1E05BA5B00CC3D10 /* LoginViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpec.swift; sourceTree = "<group>"; };
+		E6E3DD301E05BCA600CC3D10 /* MockLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginViewModel.swift; sourceTree = "<group>"; };
+		E6E5B29E1E0A044E0019C0CE /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		E6E5B2A01E0A05220019C0CE /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		E6E5B2A21E0A081F0019C0CE /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		E6E5B2A71E0A13130019C0CE /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = Assets.xcassets/launch.png; sourceTree = "<group>"; };
+		E6EDC9D91E00EF0600D4FE6B /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E6EDC9DA1E00EF0600D4FE6B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +135,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E65321961DE524BB00A02301 /* RxCocoa.framework in Frameworks */,
-				E65321921DE522FA00A02301 /* RxSwift.framework in Frameworks */,
+				E6EDC9DC1E00EF0600D4FE6B /* RxCocoa.framework in Frameworks */,
+				E6EDC9DE1E00EF0600D4FE6B /* RxSwift.framework in Frameworks */,
+				E6E5B2A31E0A081F0019C0CE /* Swinject.framework in Frameworks */,
+				E684F8F81E05DDD000F314CB /* FirebaseInstanceID.framework in Frameworks */,
+				E684F9011E05E29E00F314CB /* FirebaseCore.framework in Frameworks */,
+				E684F8FC1E05DDDF00F314CB /* FirebaseAnalytics.framework in Frameworks */,
+				E684F8F41E05DBAB00F314CB /* FirebaseAuth.framework in Frameworks */,
+				E684F9031E05E2AE00F314CB /* GoogleInterchangeUtilities.framework in Frameworks */,
+				E684F9051E05E2B400F314CB /* GoogleSymbolUtilities.framework in Frameworks */,
+				E684F9071E05E3AF00F314CB /* GoogleToolboxForMac.framework in Frameworks */,
+				E684F9091E05E3B400F314CB /* GTMSessionFetcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,27 +153,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E65321711DE3D59800A02301 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E66B9FEB1E05CE0A00FDA78F /* Nimble.framework in Frameworks */,
+				E66B9FED1E05CE0C00FDA78F /* Quick.framework in Frameworks */,
+				E62E2A521E05EA6F00A51956 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3C62EBBC6245CE4FA99DCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6E5B2A21E0A081F0019C0CE /* Swinject.framework */,
+				E62E2A511E05EA6F00A51956 /* RxTest.framework */,
+				E684F9081E05E3B400F314CB /* GTMSessionFetcher.framework */,
+				E684F9061E05E3AF00F314CB /* GoogleToolboxForMac.framework */,
+				E684F9041E05E2B400F314CB /* GoogleSymbolUtilities.framework */,
+				E684F9021E05E2AE00F314CB /* GoogleInterchangeUtilities.framework */,
+				E684F8FF1E05E0B900F314CB /* FirebaseCore.framework */,
+				E684F8FB1E05DDDF00F314CB /* FirebaseAnalytics.framework */,
+				E684F8F71E05DDD000F314CB /* FirebaseInstanceID.framework */,
+				E684F8F31E05DBAB00F314CB /* FirebaseAuth.framework */,
+				E6EDC9D91E00EF0600D4FE6B /* RxCocoa.framework */,
+				E6EDC9DA1E00EF0600D4FE6B /* RxSwift.framework */,
+				E66B9FEC1E05CE0C00FDA78F /* Quick.framework */,
+				E66B9FEA1E05CE0A00FDA78F /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E65321491DE3D59800A02301 = {
 			isa = PBXGroup;
 			children = (
-				E65321941DE522FD00A02301 /* EmbeddedBinaries */,
+				E62E2A541E05ED4F00A51956 /* Firebase.h */,
+				E62E2A551E05ED5600A51956 /* module.modulemap */,
 				E65321541DE3D59800A02301 /* map */,
 				E653216C1DE3D59800A02301 /* mapTests */,
-				E65321771DE3D59800A02301 /* mapUITests */,
 				E65321531DE3D59800A02301 /* Products */,
+				2C3C62EBBC6245CE4FA99DCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +200,6 @@
 			children = (
 				E65321521DE3D59800A02301 /* map.app */,
 				E65321691DE3D59800A02301 /* mapTests.xctest */,
-				E65321741DE3D59800A02301 /* mapUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,11 +207,15 @@
 		E65321541DE3D59800A02301 /* map */ = {
 			isa = PBXGroup;
 			children = (
+				E61B4C491DF4B37D003F7CEA /* map.entitlements */,
 				E65321551DE3D59800A02301 /* AppDelegate.swift */,
-				E65321571DE3D59800A02301 /* LoginViewController.swift */,
-				E65321591DE3D59800A02301 /* Main.storyboard */,
+				E6E5B29E1E0A044E0019C0CE /* Navigator.swift */,
+				E6E5B2A01E0A05220019C0CE /* AppContainer.swift */,
 				E65321861DE3D7A900A02301 /* SupportingFiles */,
 				E65321871DE3DD7000A02301 /* LoginViewModel.swift */,
+				E61B4C4B1DF64F5D003F7CEA /* LoginClient.swift */,
+				E6B288521E0A1A2B007014C6 /* LoginViewController.swift */,
+				E6B288541E0A1A46007014C6 /* LoginView.xib */,
 			);
 			path = map;
 			sourceTree = "<group>";
@@ -137,39 +223,25 @@
 		E653216C1DE3D59800A02301 /* mapTests */ = {
 			isa = PBXGroup;
 			children = (
-				E653216D1DE3D59800A02301 /* mapTests.swift */,
 				E653216F1DE3D59800A02301 /* Info.plist */,
+				E6095C931DFA4C9700EA13F5 /* MockLoginClient.swift */,
+				E6E3DD2E1E05BA5B00CC3D10 /* LoginViewControllerSpec.swift */,
+				E6E3DD301E05BCA600CC3D10 /* MockLoginViewModel.swift */,
 			);
 			path = mapTests;
-			sourceTree = "<group>";
-		};
-		E65321771DE3D59800A02301 /* mapUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E65321781DE3D59800A02301 /* mapUITests.swift */,
-				E653217A1DE3D59800A02301 /* Info.plist */,
-			);
-			path = mapUITests;
 			sourceTree = "<group>";
 		};
 		E65321861DE3D7A900A02301 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E6E5B2A71E0A13130019C0CE /* launch.png */,
+				E6DB4F5F1DF4ABA40005732E /* GoogleService-Info.plist */,
 				E653215F1DE3D59800A02301 /* Assets.xcassets */,
-				E65321611DE3D59800A02301 /* LaunchScreen.storyboard */,
 				E65321641DE3D59800A02301 /* Info.plist */,
 				E653215C1DE3D59800A02301 /* map.xcdatamodeld */,
+				E6B288501E0A1729007014C6 /* Main.storyboard */,
 			);
 			name = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		E65321941DE522FD00A02301 /* EmbeddedBinaries */ = {
-			isa = PBXGroup;
-			children = (
-				E65321951DE524BB00A02301 /* RxCocoa.framework */,
-				E65321911DE522FA00A02301 /* RxSwift.framework */,
-			);
-			name = EmbeddedBinaries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +255,8 @@
 				E653214F1DE3D59800A02301 /* Frameworks */,
 				E65321501DE3D59800A02301 /* Resources */,
 				E65321901DE522CB00A02301 /* Embed Frameworks */,
+				E62E2A3E1E05E73800A51956 /* ShellScript */,
+				E62E2A461E05E96900A51956 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -200,6 +274,7 @@
 				E65321651DE3D59800A02301 /* Sources */,
 				E65321661DE3D59800A02301 /* Frameworks */,
 				E65321671DE3D59800A02301 /* Resources */,
+				E62E2A3F1E05E7A500A51956 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -210,24 +285,6 @@
 			productName = mapTests;
 			productReference = E65321691DE3D59800A02301 /* mapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E65321731DE3D59800A02301 /* mapUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E65321831DE3D59800A02301 /* Build configuration list for PBXNativeTarget "mapUITests" */;
-			buildPhases = (
-				E65321701DE3D59800A02301 /* Sources */,
-				E65321711DE3D59800A02301 /* Frameworks */,
-				E65321721DE3D59800A02301 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E65321761DE3D59800A02301 /* PBXTargetDependency */,
-			);
-			name = mapUITests;
-			productName = mapUITests;
-			productReference = E65321741DE3D59800A02301 /* mapUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -243,16 +300,15 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = PKTE3CR7H9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					E65321681DE3D59800A02301 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = PKTE3CR7H9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = E65321511DE3D59800A02301;
-					};
-					E65321731DE3D59800A02301 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = PKTE3CR7H9;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E65321511DE3D59800A02301;
 					};
@@ -273,7 +329,6 @@
 			targets = (
 				E65321511DE3D59800A02301 /* map */,
 				E65321681DE3D59800A02301 /* mapTests */,
-				E65321731DE3D59800A02301 /* mapUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,9 +338,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E65321631DE3D59800A02301 /* LaunchScreen.storyboard in Resources */,
+				E6E5B2A81E0A13130019C0CE /* launch.png in Resources */,
+				E6B288511E0A1729007014C6 /* Main.storyboard in Resources */,
+				E6DB4F601DF4ABA50005732E /* GoogleService-Info.plist in Resources */,
+				E6B288551E0A1A46007014C6 /* LoginView.xib in Resources */,
 				E65321601DE3D59800A02301 /* Assets.xcassets in Resources */,
-				E653215B1DE3D59800A02301 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +353,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E65321721DE3D59800A02301 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E62E2A3E1E05E73800A51956 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E653214E1DE3D59800A02301 /* Sources */ = {
@@ -312,8 +380,12 @@
 			files = (
 				E65321881DE3DD7000A02301 /* LoginViewModel.swift in Sources */,
 				E653215E1DE3D59800A02301 /* map.xcdatamodeld in Sources */,
-				E65321581DE3D59800A02301 /* LoginViewController.swift in Sources */,
+				E6E5B29F1E0A044E0019C0CE /* Navigator.swift in Sources */,
+				E61B4C4C1DF64F5D003F7CEA /* LoginClient.swift in Sources */,
+				E6E5B2A11E0A05220019C0CE /* AppContainer.swift in Sources */,
 				E65321561DE3D59800A02301 /* AppDelegate.swift in Sources */,
+				E6B288531E0A1A2B007014C6 /* LoginViewController.swift in Sources */,
+				E6095C941DFA4C9700EA13F5 /* MockLoginClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,15 +393,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E653216E1DE3D59800A02301 /* mapTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E65321701DE3D59800A02301 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E65321791DE3D59800A02301 /* mapUITests.swift in Sources */,
+				E6E3DD311E05BCA600CC3D10 /* MockLoginViewModel.swift in Sources */,
+				E6E3DD2F1E05BA5B00CC3D10 /* LoginViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,31 +406,7 @@
 			target = E65321511DE3D59800A02301 /* map */;
 			targetProxy = E653216A1DE3D59800A02301 /* PBXContainerItemProxy */;
 		};
-		E65321761DE3D59800A02301 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E65321511DE3D59800A02301 /* map */;
-			targetProxy = E65321751DE3D59800A02301 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E65321591DE3D59800A02301 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E653215A1DE3D59800A02301 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E65321611DE3D59800A02301 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E65321621DE3D59800A02301 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E653217B1DE3D59800A02301 /* Debug */ = {
@@ -386,6 +427,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -436,6 +478,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -464,14 +507,15 @@
 		E653217E1DE3D59800A02301 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = map/map.entitlements;
 				DEVELOPMENT_TEAM = PKTE3CR7H9;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/map/firebase",
 				);
 				INFOPLIST_FILE = map/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = shouler.thomas.map;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -481,14 +525,15 @@
 		E653217F1DE3D59800A02301 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = map/map.entitlements;
 				DEVELOPMENT_TEAM = PKTE3CR7H9;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/map/firebase",
 				);
 				INFOPLIST_FILE = map/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = shouler.thomas.map;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -500,11 +545,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = PKTE3CR7H9;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = mapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shouler.thomas.mapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/map.app/map";
 			};
@@ -515,41 +567,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = PKTE3CR7H9;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = mapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shouler.thomas.mapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/map.app/map";
-			};
-			name = Release;
-		};
-		E65321841DE3D59800A02301 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = PKTE3CR7H9;
-				INFOPLIST_FILE = mapUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shouler.thomas.mapUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = map;
-			};
-			name = Debug;
-		};
-		E65321851DE3D59800A02301 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = PKTE3CR7H9;
-				INFOPLIST_FILE = mapUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shouler.thomas.mapUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = map;
 			};
 			name = Release;
 		};
@@ -579,15 +609,6 @@
 			buildConfigurations = (
 				E65321811DE3D59800A02301 /* Debug */,
 				E65321821DE3D59800A02301 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E65321831DE3D59800A02301 /* Build configuration list for PBXNativeTarget "mapUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E65321841DE3D59800A02301 /* Debug */,
-				E65321851DE3D59800A02301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

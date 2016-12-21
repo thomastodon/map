@@ -10,20 +10,29 @@ class LoginViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
     
+    var viewModel: LoginViewModelType
+    
+    
+    init(viewModel: LoginViewModelType) {
+        self.viewModel = viewModel
+        
+        super.init(nibName: "LoginView", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginViewModel = LoginViewModel(
-            input: (
-                // TODO: what is orEmpty doing?
-                username: usernameTextField.rx.text.orEmpty.asObservable(),
-                password: passwordTextField.rx.text.orEmpty.asObservable(),
-                loginTaps: loginButton.rx.tap.asObservable()
-            )
-        )
+        usernameTextField.rx.text.orEmpty.subscribe(onNext: { text in
+            // TODO: what is orEmpty doing?
+            self.viewModel.username.value = text
+        })
+            .addDisposableTo(disposeBag)
         
-        // TODO: why is it that if I remove this, things don't work?
-        loginViewModel.userIsSignedIn.subscribe().addDisposableTo(disposeBag)
+        //        viewModel.userIsSignedIn.subscribe().addDisposableTo(disposeBag)
     }
     
     override func didReceiveMemoryWarning() {
